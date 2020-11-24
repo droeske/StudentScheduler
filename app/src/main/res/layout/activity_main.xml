@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="314dp"
+        android:layout_height="410dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@color/colorBox" />
+
+    <Button
+        android:id="@+id/termButton"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Terms"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/assessmentCount"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toEndOf="@+id/assessmentButton"
+        app:layout_constraintTop_toBottomOf="@+id/courseCount" />
+
+    <TextView
+        android:id="@+id/termCount"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toEndOf="@+id/termButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mentorCount"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toEndOf="@+id/mentorButton"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentCount" />
+
+    <Button
+        android:id="@+id/courseButton"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Courses"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termButton" />
+
+    <Button
+        android:id="@+id/mentorButton"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Mentors"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentButton" />
+
+    <Button
+        android:id="@+id/assessmentButton"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Assessments"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseButton" />
+
+    <TextView
+        android:id="@+id/courseCount"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toEndOf="@+id/courseButton"
+        app:layout_constraintTop_toBottomOf="@+id/termCount" />
+
+
+    <ImageButton
+        android:id="@+id/reportButton"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/report" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="232dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#E3ECF7"
+        android:contextClickable="false"
+        android:queryHint="Search"
+        app:layout_constraintStart_toEndOf="@+id/questionButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/questionButton"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/questionmark" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseAdd">
+
+    <EditText
+        android:id="@+id/noteText"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="take note"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toEndOf="@+id/noteView"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerStatus" />
+
+    <TextView
+        android:id="@+id/noteView"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:text="Note: "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusView" />
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:text="Status: "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:text="End Date:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:text="Start Date:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseTextView" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Done"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/courseTextView"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:text="Course Title: "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/courseText"
+        android:layout_width="208dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="title"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toEndOf="@+id/courseTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/startDateButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/courseText"
+        app:srcCompat="@drawable/smallcalendar" />
+
+    <ImageButton
+        android:id="@+id/endDateButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/startDateButton"
+        app:srcCompat="@drawable/smallcalendar" />
+
+    <TextView
+        android:id="@+id/startTextView"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:text="0000/00/00"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/startDateButton"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/courseText" />
+
+    <TextView
+        android:id="@+id/endTextView"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:text="0000/00/00"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/endDateButton"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/startTextView" />
+
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:layout_width="208dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toEndOf="@+id/statusView"
+        app:layout_constraintTop_toBottomOf="@+id/endTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

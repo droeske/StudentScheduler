@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- TextView and other stuff -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/courseName"
+                android:layout_width="259dp"
+                android:layout_height="104dp"
+                android:layout_margin="10dp"
+                android:text="TextView"
+                android:textSize="30sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_delete_white_18dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/startTextView"
+                android:layout_width="140dp"
+                android:layout_height="76dp"
+                android:layout_margin="10dp"
+                android:text="Start Date: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="182dp"
+                android:layout_height="76dp"
+                android:layout_margin="10dp"
+                android:text="00/00/0000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/endTextView"
+                android:layout_width="140dp"
+                android:layout_height="76dp"
+                android:text="End Date:"
+                android:layout_margin="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/endDate"
+                android:layout_width="199dp"
+                android:layout_height="76dp"
+                android:text="00/00/0000"
+                android:layout_margin="10dp"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="140dp"
+                android:layout_height="76dp"
+                android:text="Status:"
+                android:layout_margin="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="199dp"
+                android:layout_height="76dp"
+                android:text="In Progress"
+                android:layout_margin="10dp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/noteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:text="Note:"
+                android:textSize="18sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_email_white_18dp" />
+
+            <TextView
+                android:id="@+id/noteText"
+                android:layout_width="120dp"
+                android:layout_height="105dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Example note"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notificationstartTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:text="Course Start Notification:"
+                android:textSize="18sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/notifyStartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_notification_important_white_18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notificationendTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:text="Course End Notification:"
+                android:textSize="18sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/notifyEndButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_notification_important_white_18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/assessmentsText"
+                android:layout_width="198dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:text="Assessments"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addAssessmentsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_add_white_18dp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/assessmentList"
+            android:layout_width="match_parent"
+            android:layout_height="270dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mentorsText"
+                android:layout_width="131dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:text="Mentors"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addMentorsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_add_white_18dp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mentorList"
+            android:layout_width="match_parent"
+            android:layout_height="270dp" />
+
+        <TextView
+            android:id="@+id/spaceText"
+            android:layout_width="146dp"
+            android:layout_height="60dp"
+            android:text="" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/baseline_create_white_18dp" />
+    </LinearLayout>
+</ScrollView>

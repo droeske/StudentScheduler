@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportScreen">
+
+    <TextView
+        android:id="@+id/searchFooterView"
+        android:layout_width="347dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="7dp"
+        android:background="#20376B"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchInfoView" />
+
+    <Button
+        android:id="@+id/assessmentReportButton"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Assessment Report"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/courseReportButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/courseReportButton"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Course Report"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/termReportButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/searchInfoView"
+        android:layout_width="347dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="7dp"
+        android:background="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchTitleView" />
+
+    <Button
+        android:id="@+id/termReportButton"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:text="Term Report"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/searchTitleView"
+        android:layout_width="347dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="12dp"
+        android:background="#20376B"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseReportButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
